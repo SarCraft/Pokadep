@@ -1,0 +1,16 @@
+.BackgroundSvgHome {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public/Home/background/Light.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .custom-background {
+    position: fixed; 
+    top: -80px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
