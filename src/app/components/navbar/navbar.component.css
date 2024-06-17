@@ -1,6 +1,8 @@
 /* Layout */
 nav {
-  background-color:rgba(37, 36, 48);
+  position: relative; /* nécessaire pour que z-index fonctionne */
+  z-index: 1; /* valeur supérieure à celle du background */
+  background-color:rgba(37, 36, 48, 0.3);
   height: 100px;
   display: flex;
   align-items: center;
@@ -8,7 +10,6 @@ nav {
   padding: 0 50px;
 }
 
-/* Link */
 nav a {
   background-color: transparent;
   color: white;
@@ -76,4 +77,18 @@ li {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .Navbtn {
+    display: none;
+  }
 }
