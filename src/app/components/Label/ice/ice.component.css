@@ -1,0 +1,29 @@
+.badge {
+    width: 100px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 200px;
+    left: 10.11px;
+    background: #5E5D66;
+    border-radius: 100px;
+    border: 2px solid #96D9D6;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex;
+  }
+  
+  .badge-icon {
+    font-size: 15px;
+    font-family: Clash Display;
+    font-weight: 500;
+  }
+  
+  .badge-text {
+    color: white;
+    font-size: 15px;
+    font-family: Clash Display;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
