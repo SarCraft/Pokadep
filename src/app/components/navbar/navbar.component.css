@@ -1,7 +1,7 @@
 /* Layout */
 nav {
-  position: relative; /* nécessaire pour que z-index fonctionne */
-  z-index: 1; /* valeur supérieure à celle du background */
+  position: relative; 
+  z-index: 1; 
   background-color:rgba(37, 36, 48, 0.3);
   height: 100px;
   display: flex;
