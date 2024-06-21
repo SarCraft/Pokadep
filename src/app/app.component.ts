@@ -5,8 +5,7 @@ import { LightsComponent } from './components/lights/lights.component';
 import { DockComponent } from './components/dock/dock.component';
 import { StaticCarouselComponent } from './components/static-carousel/static-carousel.component';
 import { ScrollIconComponent } from './components/scroll-icon/scroll-icon.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { DetailedCardComponent } from './components/detailed-card/detailed-card.component';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
             DockComponent, 
             StaticCarouselComponent,
             ScrollIconComponent,
-            CarouselComponent,
-            FooterComponent
+            DetailedCardComponent,
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

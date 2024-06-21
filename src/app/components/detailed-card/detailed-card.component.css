@@ -35,24 +35,26 @@
   }
 
   .card-links {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 1rem;
   }
-
+  
   .card-link {
     text-align: center;
     color: white;
     font-size: 14px;
     font-weight: 500;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
   }
-
+  
   .card-link::before {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     width: 0%;
     height: 2px;
