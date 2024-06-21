@@ -58,16 +58,20 @@
     left: 50%;
     width: 50%;
     height: 2px;
-    background-color: whitesmoke;
+    background-color: white;
     transform: translateX(-50%);
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
   }
   
   .card-link:hover::before {
     width: 100%;
     left: 0;
     transform: none;
+    background-color: rgb(245, 245, 245);
+    opacity: 1;
   }
+  
 
   .card-description {
     color: white;
