@@ -1,0 +1,6 @@
+section {
+    margin-top: auto;
+    display: flex;
+    align-content: end;
+    gap: 1rem;
+  }
