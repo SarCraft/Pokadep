@@ -1,0 +1,138 @@
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* Card */
+  .card-container {
+    display: flex;
+  }
+
+  .card-inner {
+    height: auto;
+    background-color: #3A3944;
+    border-radius: 8px;
+    border: 1px solid #4D4C56;
+    position: relative;
+    padding: 20px;
+  }
+
+  /* Card Content */
+  .card-title {
+    text-align: center;
+    color: #DEDEE0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .card-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .card-link {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+
+  .card-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width 0.3s ease;
+  }
+  
+  .card-link:hover::before {
+    width: 100%;
+  }
+
+  .card-description {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .card-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .card-stat-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-stat-label {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .card-stat-value {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card-type-weakness {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .card-type-weakness-label,
+  .card-type-weakness-value {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .card-type-weakness-value {
+    font-weight: 500;
+  }
+
+  .card-category {
+    background-color: #252430;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .card-category-label {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  .card-category-value {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostBinding, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BugLabelComponent } from '../Label/bug/bug.component';
 import { IceLabelComponent } from '../Label/ice/ice.component';

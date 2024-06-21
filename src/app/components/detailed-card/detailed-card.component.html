@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-content">
+            <h2 class="card-title">{{ pokemon?.name | capitalize }}</h2>
+            <img class="card-image" [src]="pokemon?.sprites.front_default" alt="{{ pokemon?.name }}" />
+            <div class="card-links">
+              <div class="card-link">About</div>
+              <div class="card-link">Stats</div>
+              <div class="card-link">Evolutions</div>
+            </div>
+            <p class="card-description">
+              Description of the pokemon goes here. Provide information about the pokemon's abilities, habits, and other interesting facts.
+            </p>
+            <div class="card-stats">
+              <div class="card-stat-group">
+                <p class="card-stat-label">Weight</p>
+                <p class="card-stat-value">{{ (pokemon?.weight * 0.220462) | number : '1.2-2' }} lbs</p>
+              </div>
+              <div class="card-stat-group">
+                <p class="card-stat-label">Height</p>
+                <p class="card-stat-value">{{ (pokemon?.height * 0.393701) | number : '1.2-2' }} ft</p>
+              </div>
+            </div>
+            <div class="card-type-weakness">
+                <p class="card-type-weakness-label">Weakness:</p>
+                <p class="card-type-weakness-value">{{ pokemon.weaknesses.join(', ') }}</p>
+                <p class="card-type-weakness-label">Type:</p>
+                <p class="card-type-weakness-value">{{ pokemon.types.join(', ') }}</p>
+            </div>              
+            <div class="card-category">
+              <p class="card-category-label">Category:</p>
+              <p class="card-category-value"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

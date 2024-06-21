@@ -30,6 +30,6 @@
       <p><strong>Height:</strong> {{ (pokemon?.height * 0.393701) | number : '1.2-2' }} ft</p>
       <p><strong>Weight:</strong> {{ (pokemon?.weight * 0.220462) | number : '1.2-2' }} lbs</p>
     </div>
-    <img class="" [src]="pokemon?.sprites.front_default" alt="{{ pokemon?.name }} image" />
+    <img [src]="pokemon?.sprites.front_default" alt="{{ pokemon?.name }} image" />
   </article>
   
