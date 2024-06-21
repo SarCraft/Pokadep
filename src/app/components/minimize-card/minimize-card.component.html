@@ -1,0 +1,35 @@
+<article class="card">
+    <header class="card-header">
+      <h3 class="id">#{{ ('0000' + pokemon?.id).slice(-4) }}</h3>
+      <div class="labels">
+        <app-bug-label *ngIf="pokemon?.types[0].type.name === 'bug'"></app-bug-label>
+        <app-ice-label *ngIf="pokemon?.types[0].type.name === 'ice'"></app-ice-label>
+        <app-dark-label *ngIf="pokemon?.types[0].type.name === 'dark'"></app-dark-label>
+        <app-fire-label *ngIf="pokemon?.types[0].type.name === 'fire'"></app-fire-label>
+        <app-rock-label *ngIf="pokemon?.types[0].type.name === 'rock'"></app-rock-label>
+        <app-fairy-label *ngIf="pokemon?.types[0].type.name === 'fairy'"></app-fairy-label>
+        <app-ghost-label *ngIf="pokemon?.types[0].type.name === 'ghost'"></app-ghost-label>
+        <app-grass-label *ngIf="pokemon?.types[0].type.name === 'grass'"></app-grass-label>
+        <app-steel-label *ngIf="pokemon?.types[0].type.name === 'steel'"></app-steel-label>
+        <app-water-label *ngIf="pokemon?.types[0].type.name === 'water'"></app-water-label>
+        <app-dragon-label *ngIf="pokemon?.types[0].type.name === 'dragon'"></app-dragon-label>
+        <app-flying-label *ngIf="pokemon?.types[0].type.name === 'flying'"></app-flying-label>
+        <app-ground-label *ngIf="pokemon?.types[0].type.name === 'ground'"></app-ground-label>
+        <app-normal-label *ngIf="pokemon?.types[0].type.name === 'normal'"></app-normal-label>
+        <app-poison-label *ngIf="pokemon?.types[0].type.name === 'poison'"></app-poison-label>
+        <app-psychic-label *ngIf="pokemon?.types[0].type.name === 'psychic'"></app-psychic-label>
+        <app-electric-label *ngIf="pokemon?.types[0].type.name === 'electric'"></app-electric-label>
+        <app-fighting-label *ngIf="pokemon?.types[0].type.name === 'fighting'"></app-fighting-label>
+      </div>
+      <button class="card-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+      </button>
+    </header>
+    <div class="info">
+      <p><strong>Name:</strong> {{ pokemon?.name | capitalize }}</p>
+      <p><strong>Height:</strong> {{ (pokemon?.height * 0.393701) | number : '1.2-2' }} ft</p>
+      <p><strong>Weight:</strong> {{ pokemon?.weight * 0.220462 }} lbs</p>
+    </div>
+    <img [src]="pokemon?.sprites.front_default" alt="{{ pokemon?.name }} image" />
+  </article>
+  

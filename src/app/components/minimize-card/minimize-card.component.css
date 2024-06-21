@@ -1,0 +1,86 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p + p {
+  text-indent: -20px;
+  padding-left: 20px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Card */
+.card {
+  width: 16rem;
+  height: 16rem;
+  flex-shrink: 0;
+  position: relative;
+  background: #3A3944;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  left: 95px;
+  top: -45px;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.id {
+  left: 15px;
+  top: 12px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Clash Display;
+  font-weight: 500;
+}
+
+.info {
+  left: 18px;
+  top: 115px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-family: Clash Display;
+  font-weight: 400;
+}
+
+.labels {
+  position: absolute;
+  left: 0.5rem;
+  top: -5px;
+  display: flex;
+  align-items: center;
+}
+
+.label:last-child {
+  margin-right: 2rem;
+}
+
+/* Button */
+.card-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 8px;
+  background: #252430;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.card-button:hover {
+  background: #1e1e24;
+}
