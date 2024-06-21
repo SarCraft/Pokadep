@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, HostBinding, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BugLabelComponent } from '../Label/bug/bug.component';
 import { IceLabelComponent } from '../Label/ice/ice.component';
@@ -47,15 +47,25 @@ import { CapitalizePipe } from '../../pipe/capitalize.pipe';
     CapitalizePipe,
   ],
   templateUrl: './minimize-card.component.html',
-  styleUrl: './minimize-card.component.css'
+  styleUrl: './minimize-card.component.css',
+  encapsulation: ViewEncapsulation.None,
+  host: {
+    class: 'minimize-card',
+  },
 })
 export class MinimizeCardComponent implements OnInit {
   pokemon: any;
 
+  getRandomNumber(): number {
+    const maxPokemon = 1009;
+    return Math.floor(Math.random() * maxPokemon) + 1;
+  }
+
   constructor(private pokeapiService: PokeapiService) { }
 
   ngOnInit(): void {
-    this.pokeapiService.getPokemon(3).subscribe((response: any) => {
+    const randomId = this.getRandomNumber();
+    this.pokeapiService.getPokemon(randomId).subscribe((response: any) => {
       this.pokemon = response;
     });
   }
