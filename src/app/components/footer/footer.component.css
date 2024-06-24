@@ -1,0 +1,111 @@
+.footer {
+    background-color: #201F29;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1 1 20%;
+    margin-bottom: 30px;
+  }
+  
+  .footer-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    color: #E9E9E9;
+    font-family: Clash Display;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #E9E9E9;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .newsletter-input {
+    background: #D9D9D9;
+    border: none;
+    border-radius: 50px;
+    color: #5E5D66;
+    font-family: Clash Display;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    padding-left: 19px;
+    width: 350px;
+  }
+  
+  .newsletter-button {
+    background: #252430;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .newsletter-button::before {
+    content: "";
+    background: url(https://via.placeholder.com/30x30);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-section {
+      flex: 1 1 50%;
+    }
+  }
