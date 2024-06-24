@@ -1,11 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { PokeapiService } from '../../service/pokeapi.service';
+import { CapitalizePipe } from '../../pipe/capitalize.pipe';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-detailed-card',
   templateUrl: './detailed-card.component.html',
   styleUrls: ['./detailed-card.component.css'],
   providers: [PokeapiService],
+  standalone: true,
+  imports: [CapitalizePipe, CommonModule],
+  encapsulation: ViewEncapsulation.None,
+  host: {
+    class: 'minimize-card',
+  },
 })
 export class DetailedCardComponent implements OnInit {
   @Input() pokemon: any;
