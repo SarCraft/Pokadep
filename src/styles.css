@@ -9,23 +9,31 @@ body {
     margin: 0px;
 }
 
-html ::-webkit-scrollbar {
-    width: 10px;
+  @media (min-width: 768px) {
+    html ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    html ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    html ::-webkit-scrollbar-button {
+      display: none;
+    }
+    
+    html ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    
+    html ::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
   }
-  
-  html ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  html ::-webkit-scrollbar-button {
-    display: none;
-  }
-  
-  html ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  
-  html ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 768px) {
+    body, head, html {
+      overflow-x: scroll;
+    }
   }
