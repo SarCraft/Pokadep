@@ -91,4 +91,8 @@ li {
   .Navbtn {
     display: none;
   }
+
+  .PokedexBtn {
+    margin-right: 2rem;
+  }
 }
